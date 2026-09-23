@@ -7,6 +7,7 @@ import JsonLd from '@/components/JsonLd'
 import PriceBlock from '@/components/PriceBlock'
 import ProcessSteps from '@/components/ProcessSteps'
 import Reveal from '@/components/Reveal'
+import WorkGallery from '@/components/WorkGallery'
 import { cityPages } from '@/lib/cities'
 import { services } from '@/lib/services'
 import { localBusinessSchema, peopleSchema, websiteSchema } from '@/lib/schema'
@@ -53,7 +54,7 @@ const homeFaqs = [
   },
   {
     q: 'How do I book a service?',
-    a: 'Call or text Joel at (985) 414-1733 or Chase at (985) 859-1628, or send a request through the contact form. Tell us the vehicle or equipment, the town and roughly when you want it done, and we will confirm the price before we come out.',
+    a: 'Call or text Joel at (985) 414-1733 or Chase at (985) 859-1628, or open the booking form from the contact page. Tell us the vehicle or equipment, the town and roughly when you want it done, and we will confirm the price before we come out.',
   },
   {
     q: 'Do you service standby generators?',
@@ -337,7 +338,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Service areas */}
+      {/* 7. Real work */}
+      <WorkGallery />
+
+      {/* 8. Service areas */}
       <section className="section bg-cream">
         <div className="container-wide">
           <div className="max-w-3xl">
@@ -381,7 +385,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Owners */}
+      {/* 9. Owners */}
       <section className="section bg-cream-dim">
         <div className="container-wide grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-14">
           <Reveal>
@@ -435,14 +439,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. FAQs */}
+      {/* 10. FAQs */}
       <FaqSection
         faqs={homeFaqs}
         heading="Questions people ask"
         intro="If something is not answered here, call or text either number and ask. We would rather tell you up front than have you find out at the driveway."
       />
 
-      {/* 10. CTA */}
+      {/* 11. CTA */}
       <CtaBand
         heading="Ready when you are"
         body="Tell us the vehicle, the equipment and the town. We will confirm the price and find a window that does not cost you a working day."
