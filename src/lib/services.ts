@@ -129,6 +129,9 @@ export const services: ServiceDef[] = [
       alt: 'An SUV up on ramps in a residential driveway with a drain pan, oil and paper towels set out beside it during a Bayou Boyz mobile oil change',
     },
 
+    heroImage: '/images/hero-oil-change.jpg',
+    heroAlt:
+      'A dark SUV with the hood up under a carport while a Bayou Boyz technician works underneath it, with a drain pan and oil set out on the ground',
     schemaServiceType: 'Mobile oil change',
   },
 
@@ -226,6 +229,9 @@ export const services: ServiceDef[] = [
       },
     ],
 
+    heroImage: '/images/hero-diesel.jpg',
+    heroAlt:
+      'A full-size Chevrolet pickup with the hood up in a carport, with a step stool and drain pan set out for a mobile oil change',
     schemaServiceType: 'Mobile diesel oil change',
   },
 
@@ -423,9 +429,12 @@ export const services: ServiceDef[] = [
     ],
     photo: {
       src: '/images/job-mower.jpg',
-      alt: 'A red Ariens zero-turn mower parked on the grass beside a house with an oil extractor connected to it',
+      alt: 'A red Ariens zero-turn mower on the grass with a manual oil extractor connected, drawing the old oil out',
     },
 
+    heroImage: '/images/hero-small-engine.jpg',
+    heroAlt:
+      'A red Gravely zero-turn mower parked in an open shed alongside other equipment, ready for a mobile service',
     schemaServiceType: 'Small engine maintenance',
   },
 
@@ -519,6 +528,9 @@ export const services: ServiceDef[] = [
       },
     ],
 
+    heroImage: '/images/hero-fleet.jpg',
+    heroAlt:
+      'A GMC Sierra pickup with the hood up, serviced on site in a driveway rather than taken to a shop',
     schemaServiceType: 'Fleet vehicle maintenance',
   },
 
@@ -612,6 +624,9 @@ export const services: ServiceDef[] = [
         a: 'Yes. Every visit includes a visual inspection and we point out anything we notice. We are not a repair shop, so if something needs real work we tell you what we saw and you take it from there.',
       },
     ],
+    heroImage: '/images/hero-maintenance.jpg',
+    heroAlt:
+      'A Ford Expedition with the hood up in a residential driveway during a Bayou Boyz mobile maintenance visit',
     schemaServiceType: 'Vehicle maintenance',
   },
 ]

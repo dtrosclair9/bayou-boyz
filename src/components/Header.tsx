@@ -43,16 +43,18 @@ export default function Header() {
     // `sticky` already establishes the containing block the mobile panel's
     // `absolute` positioning needs, so no `relative` is added here.
     <header className="sticky top-0 z-50 border-b-2 border-charcoal/10 bg-cream">
-      <div className="container-wide flex items-center justify-between gap-4 py-3">
+      <div className="container-wide flex items-center justify-between gap-4 py-2">
         <Link href="/" className="flex shrink-0 items-center" aria-label={`${site.name} home`}>
-          {/* The approved lockup is square: gator stacked over the wordmark. */}
+          {/* The approved lockup is square: gator stacked over the wordmark,
+              so it needs real height before the "MOBILE OIL CHANGES" line is
+              readable. Sized big on purpose. Do not shrink this. */}
           <Image
             src="/images/logo.png"
             alt={site.name}
             width={1231}
             height={1234}
             priority
-            className="h-14 w-auto sm:h-16 lg:h-20"
+            className="h-20 w-auto sm:h-24 lg:h-28"
           />
         </Link>
 
