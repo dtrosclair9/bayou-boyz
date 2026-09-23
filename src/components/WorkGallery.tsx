@@ -98,9 +98,13 @@ export default function WorkGallery() {
           <h2 className="text-3xl text-charcoal sm:text-4xl">Before and after, same visit</h2>
           <div className="rule-brass mt-4" aria-hidden="true" />
           <p className="mt-5 prose-body">
-            Bayou Boyz photograph the engine bay on the way in and on the way out. These are their
-            own shots, same vehicle and same angle in each pair, taken minutes apart in somebody
-            {'’'}s driveway.
+            Bayou Boyz photograph the engine bay on the way in and on the way out. Same vehicle,
+            same angle, minutes apart, in somebody{'’'}s driveway. They tend to leave a bay
+            cleaner than they found it, and there is no charge for that.
+          </p>
+          <p className="mt-4 prose-body">
+            It is not a detailing service and it is not promised on every job. If it matters to you,
+            say so when you book.
           </p>
         </div>
 

@@ -120,6 +120,10 @@ export const services: ServiceDef[] = [
         a: 'We tell you before we add it. Each additional quart is $10. The quantities in our pricing cover most engines in each cylinder class, and larger capacity engines are the usual reason for an extra quart or two.',
       },
       {
+        q: 'Do you clean the engine bay?',
+        a: 'Usually, yes. Bayou Boyz tend to wipe the engine bay down while they are in there, which is why you will see before and after shots on their Facebook page. There is no charge for it. It is not a detailing service and it is not promised on every job, so mention it when you book if it matters to you.',
+      },
+      {
         q: 'Do you work on weekends?',
         a: 'Yes. Evenings and weekends are normal for us, which is part of why the business exists. Call or text either number and we will find a window that fits.',
       },
