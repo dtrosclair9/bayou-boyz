@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+  }
+
+  /* Display type is the brand's condensed italic. Tracking is tightened
+     because Barlow Condensed at 800 italic opens up at large sizes. */
+  h1,
+  h2,
+  h3 {
+    @apply font-display uppercase italic tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-olive;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply mx-auto w-full max-w-wide px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Solid fills only. No translucent overlay buttons. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3
+           font-semibold uppercase tracking-wide transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-olive text-cream hover:bg-olive-dark;
+  }
+
+  .btn-dark {
+    @apply btn bg-charcoal text-cream hover:bg-charcoal-soft;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-cream;
+  }
+
+  .btn-cream {
+    @apply btn bg-cream text-charcoal hover:bg-cream-dim;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  /* The brass hairline that separates sections, lifted from the brand kit. */
+  .rule-brass {
+    @apply h-px w-16 bg-brass;
+  }
+
+  .prose-body {
+    @apply text-base leading-relaxed text-charcoal/90 md:text-lg;
+  }
+}
