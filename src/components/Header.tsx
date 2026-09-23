@@ -45,16 +45,20 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b-2 border-charcoal/10 bg-cream">
       <div className="container-wide flex items-center justify-between gap-4 py-2">
         <Link href="/" className="flex shrink-0 items-center" aria-label={`${site.name} home`}>
-          {/* The approved lockup is square: gator stacked over the wordmark,
-              so it needs real height before the "MOBILE OIL CHANGES" line is
-              readable. Sized big on purpose. Do not shrink this. */}
+          {/* The approved lockup is 1.82:1, not square. The master PNG carries
+              near-invisible alpha (values 1-5) out to a full square, so a naive
+              getbbox() trim keeps that padding and renders the artwork at half
+              size inside an empty box. public/images/logo.png is cropped at an
+              alpha threshold and the sub-visible pixels are zeroed out.
+              Keep the intrinsic size below matching that file. Sized big on
+              purpose: do not shrink this. */}
           <Image
             src="/images/logo.png"
             alt={site.name}
-            width={1231}
-            height={1234}
+            width={1167}
+            height={641}
             priority
-            className="h-20 w-auto sm:h-24 lg:h-28"
+            className="h-16 w-auto sm:h-20 lg:h-28"
           />
         </Link>
 
