@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import BookingPanel from '@/components/BookingPanel'
+import StickyBookingBar from '@/components/StickyBookingBar'
 import FaqSection from '@/components/FaqSection'
 import PageHero from '@/components/PageHero'
 import { BASE_URL, contacts, ogImage, parishes, serviceAreas, site } from '@/lib/site'
@@ -50,8 +51,15 @@ export default function ContactPage() {
       />
 
       <section className="section bg-cream">
-        <div className="container-wide grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
-          <div>
+        {/* Booking comes first in the DOM so it is the first thing on a phone,
+            and sticks alongside the contact details on desktop. The offset
+            clears the sticky header at its full logo height. */}
+        <div className="container-wide grid gap-10 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+          <div className="order-1 lg:order-2 lg:sticky lg:top-36 lg:self-start">
+            <BookingPanel />
+          </div>
+
+          <div className="order-2 lg:order-1">
             <h2 className="text-3xl text-charcoal sm:text-4xl">Reach us</h2>
             <div className="rule-brass mt-4" aria-hidden="true" />
 
@@ -98,12 +106,12 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-
-          <BookingPanel />
         </div>
       </section>
 
       <FaqSection faqs={faqs} heading="Before you get in touch" />
+
+      <StickyBookingBar />
     </>
   )
 }
