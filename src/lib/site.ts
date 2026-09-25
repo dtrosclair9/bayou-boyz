@@ -20,15 +20,11 @@ export const site = {
 }
 
 /**
- * The client's existing Google Form booking flow, kept rather than replaced.
- * It is their "New Customer Service Request & Authorization Form", five pages,
- * and submissions already land where they expect them.
- *
- * The `ouid` parameter on the link they had published is a personal Google
- * account identifier, so it is stripped here.
+ * Formspree endpoint for the booking form. One endpoint per form schema:
+ * Akismet flags an endpoint reused across different field sets.
  */
-export const bookingUrl =
-  'https://docs.google.com/forms/d/e/1FAIpQLSerDEMgWN0_K8qG5yMjqn7XHYnb3eiu4sIj9Ag5Fy10C-b83g/viewform'
+export const formspreeId = 'xyezdnjy'
+export const formspreeEndpoint = `https://formspree.io/f/${formspreeId}`
 
 /** Both owners answer the phone, so both numbers ship everywhere. */
 export const contacts = [

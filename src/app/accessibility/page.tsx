@@ -50,11 +50,12 @@ export default function AccessibilityPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl text-charcoal">Third-party pages</h2>
+            <h2 className="text-2xl text-charcoal">The booking form</h2>
             <p className="mt-3 prose-body">
-              Our booking form is hosted on Google Forms, which we do not control. If that form is
-              difficult for you to use, call or text either number below and we will take your
-              booking directly over the phone. You will not be asked to use the form.
+              Every field on the booking form has a real label, required fields are marked in the
+              label rather than by color alone, and errors are announced to screen readers. If the
+              form is difficult for you to use for any reason, call or text either number below and
+              we will take your booking over the phone instead.
             </p>
           </div>
 

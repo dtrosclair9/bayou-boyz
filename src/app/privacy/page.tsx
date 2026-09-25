@@ -37,11 +37,11 @@ export default function PrivacyPage() {
           <div>
             <h2 className="text-2xl text-charcoal">What we collect</h2>
             <p className="mt-3 prose-body">
-              This website itself does not collect anything you type. Booking runs through our
-              service request and authorization form, which is hosted on Google Forms and opens in a
-              separate tab. That form asks for your first and last name, your phone number, the
-              address where the vehicle or equipment will be, your preferred contact method, and the
-              date and time window you want. We do not ask for payment details anywhere.
+              When you submit the booking form on this site, we receive what you type into it:
+              your name, phone number, email address, the service you selected, the vehicle
+              identification number where one applies, the address where the vehicle or equipment
+              will be, and anything you write in the notes box. We do not ask for payment details
+              anywhere on this website.
             </p>
             <p className="mt-3 prose-body">
               Our hosting provider also records standard technical information for every visit, such
@@ -68,11 +68,10 @@ export default function PrivacyPage() {
             </p>
             <ul className="mt-4 space-y-3">
               <li className="border-l-4 border-olive bg-cream-dim p-4">
-                <strong className="text-charcoal">Google Forms</strong>
+                <strong className="text-charcoal">Formspree</strong>
                 <span className="block text-charcoal/85">
-                  Our booking and service authorization form is hosted on Google Forms. Everything
-                  you enter there is collected and stored by Google on our behalf, and is subject to
-                  Google&apos;s own privacy policy in addition to this one.
+                  Processes the booking form and delivers submissions to our email. Anything you
+                  enter in the form passes through Formspree.
                 </span>
               </li>
               <li className="border-l-4 border-olive bg-cream-dim p-4">

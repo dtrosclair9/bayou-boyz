@@ -1,8 +1,8 @@
-import { bookingUrl, site } from '@/lib/site'
+import { site } from '@/lib/site'
 
 /**
- * Booking bar for phones. On desktop the booking panel is sticky in its own
- * column, so this only shows below `lg`.
+ * Booking bar for phones. The booking form lives on this page now, so the
+ * second button jumps to it rather than opening anything external.
  *
  * `sticky bottom-0` rather than `fixed`: as the last element inside main it
  * pins to the bottom of the viewport while the page scrolls, then releases at
@@ -21,12 +21,7 @@ export default function StickyBookingBar() {
         >
           Call
         </a>
-        <a
-          href={bookingUrl}
-          target="_blank"
-          rel="noopener"
-          className="btn-primary flex-[2] px-3 py-2.5 text-sm"
-        >
+        <a href="#book" className="btn-primary flex-[2] px-3 py-2.5 text-sm">
           Book online
         </a>
       </div>

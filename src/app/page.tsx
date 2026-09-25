@@ -54,7 +54,7 @@ const homeFaqs = [
   },
   {
     q: 'How do I book a service?',
-    a: 'Call or text Joel at (985) 414-1733 or Chase at (985) 859-1628, or open the booking form from the contact page. Tell us the vehicle or equipment, the town and roughly when you want it done, and we will confirm the price before we come out.',
+    a: 'Call or text Joel at (985) 414-1733 or Chase at (985) 859-1628, or fill out the booking form on the contact page. Tell us the vehicle or equipment, the town and roughly when you want it done, and we will confirm the price before we come out.',
   },
   {
     q: 'Do you service standby generators?',
