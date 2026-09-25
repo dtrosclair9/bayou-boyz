@@ -17,6 +17,17 @@ const nextConfig = {
     ]
     return [{ source: '/:path*', headers: securityHeaders }]
   },
+  async redirects() {
+    return [
+      // Printed QR codes point at /card rather than at "/" so the destination
+      // stays ours to change after the cards are in someone's wallet.
+      //
+      // permanent: false is deliberate. A 308 gets cached by the browser more
+      // or less forever, which would defeat the entire point of routing the QR
+      // through a path we control. Keep this a 307.
+      { source: '/card', destination: '/', permanent: false },
+    ]
+  },
 }
 
 module.exports = nextConfig
